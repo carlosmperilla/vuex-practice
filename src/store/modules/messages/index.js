@@ -10,7 +10,6 @@ const module = {
           author: 1,
           message: 'Hola 👀',
           timestamp: new Date().toLocaleTimeString(),
-<<<<<<< HEAD
           read: false,
           channelId: 1
         },
@@ -29,16 +28,6 @@ const module = {
           timestamp: new Date().toLocaleTimeString(),
           read: false,
           channelId: 2
-=======
-          read: true
-        },
-        {
-          id: 2,
-          author: 1,
-          message: 'Hola 👀',
-          timestamp: new Date().toLocaleTimeString(),
-          read: false
->>>>>>> 17-messages
         },
         {
           id: 4,

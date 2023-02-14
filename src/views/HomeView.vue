@@ -17,7 +17,7 @@ export default {
     return {
       search: '',
       profile: {
-        username: 'Diana Nerd',
+        username: 'Usuario Actual',
         avatar: '/avatars/avatar.jpg'
       },
       channels: [
@@ -31,7 +31,13 @@ export default {
     }
   },
   computed: {
+    // Trae variables desde el store.
+    // Al ser variables reactivas,
+    // usamos funciones computadas para su
+    // representación.
+    // https://vuex.vuejs.org/guide/state.html#the-mapstate-helper
     ...mapState(['status']),
+    // https://vuex.vuejs.org/guide/getters.html#the-mapgetters-helper
     ...mapGetters('profile', ['firstName']),
     ...mapGetters('channels', ['getChannels'])
   },

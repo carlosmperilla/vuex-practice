@@ -2,11 +2,14 @@
 import { mapState, mapActions } from 'vuex'
 export default {
   computed: {
+    // Extrae el nombre de usuario del perfil en el estado.
     ...mapState({
       username: (state) => state.profile.username
     })
   },
   methods: {
+    // Importa la función 'updateUsername' del perfil.
+    // aquí tambien se pueden importar las mutations.
     ...mapActions('profile', ['updateUsername'])
   }
 }
