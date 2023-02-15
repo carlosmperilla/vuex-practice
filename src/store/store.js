@@ -2,6 +2,11 @@ const store = {
   profile: {
     username: ''
   },
+  // Dividimos en contactos, mensajes y canales
+  // para normalizar, haciendo los datos extraidos,
+  // lo más sencillos posibles, y evitando los datos
+  // repetidos y las modificaciones excesivas,
+  // quitandole profundidad a los objetos.
   contacts: [
     { 
       id: 1,

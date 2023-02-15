@@ -10,6 +10,7 @@ export default {
   methods: {
     // Importa la función 'updateUsername' del perfil.
     // aquí tambien se pueden importar las mutations.
+    // Primero el modulo de origen, luego las 'actions'
     ...mapActions('profile', ['updateUsername'])
   }
 }

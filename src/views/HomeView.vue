@@ -38,6 +38,9 @@ export default {
     // https://vuex.vuejs.org/guide/state.html#the-mapstate-helper
     ...mapState(['status']),
     // https://vuex.vuejs.org/guide/getters.html#the-mapgetters-helper
+    // Primero indicamos el modulo (si no pertenece directamente al index.js de store)
+    // y luego el getter a obtener.
+    // Esto se debe a que el modulo 'profile' tiene 'namespaced: true'
     ...mapGetters('profile', ['firstName']),
     ...mapGetters('channels', ['getChannels'])
   },

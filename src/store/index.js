@@ -1,4 +1,5 @@
 import { createStore } from 'vuex'
+// Importamos los modulos por componentes.
 import profile from '@/store/modules/profile'
 import channels from '@/store/modules/channels'
 import messages from '@/store/modules/messages'
@@ -29,6 +30,8 @@ const store = createStore({
     }
   },
   actions: {},
+  // Para modularizar el store,
+  // por componentes.
   modules: {
     profile,
     channels,
